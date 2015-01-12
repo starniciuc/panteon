@@ -9,14 +9,20 @@ $( document ).ready(function() {
         $(this).parent().hide();
     });
     
-    $('.PopRefa').hide();
-    
     $('.popoverAction').click(function(){
-        $(this).next().toggle();
+        $(this).next().show();
     });
     
      $('.PopRefa').click(function(){
         $(this).hide();
      });
+     $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $(".regGroup").addClass(("scrolling"));
+        }
+        else{
+            $(".regGroup").removeClass(("scrolling"));
+        }
+    });
 });
 

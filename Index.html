@@ -9,96 +9,576 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <div class="wrapper">
+            <div class="inner-wrapper">
+                <!-- Header -->
+                <!-- Menu -->
+                <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container ">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="delemitra"></li>
+                                <li><a class="fixH" href="#"><img src="img/home-icon.png" alt=""></a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle fixH" data-toggle="dropdown">О компании</a>
+                                    <ul class="dropdown-menu">
 
-        <!-- Header -->
-        <!-- Menu -->
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container ">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Контакты</a></li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle fixH" data-toggle="dropdown">Инвестору</a>
+                                    <ul class="dropdown-menu wd-menu">
+                                        <div class="col-md-6">
+                                            <li><a href="#">С чего начать </a></li>
+                                            <li><a href="#">Что такое ПАММ-счета?</a></li>
+                                            <li><a href="#">Что такое ПАММ-счет 2.0?</a></li>
+                                            <li><a href="#">Что такое ПАММ-фонды? </a></li>
+                                        </div>
+                                        <div class="col-md-6" >
+                                            <li><a href="#">Что такое индексы?</a></li>
+                                            <li><a href="#">Составление ПАММ­портфеля</a></li>
+                                            <li><a href="#">Демонстративный счет инвестора</a></li>
+                                        </div>
+
+                                    </ul>
+                                </li>
+
+                                <li class="fixNav1"><a href="#">Ввод / вывод денег</a></li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle fixH" data-toggle="dropdown">Видеокурсы</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a  href="#">Видеокурсы Форекс Тренд</a></li>
+                                        <li><a href="#">Видеокурсы Пантеон Финанс</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle fixH" data-toggle="dropdown">Отчеты и статьи</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a href="#" >Недельный отчеты</a></li>
+                                        <li><a href="#">Статьи</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a class="fixH" href="#">Вопрос-ответ</a></li>
+                                <li><a class="fixNav2" href="#">Предупреждение о рисках</a></li>
+                                <li class="delemitra"></li>
+                            </ul>
+
+                        </div><!--/.nav-collapse -->
+                    </div>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="delemitra"></li>
-                        <li><a class="fixH" href="#"><img src="img/home-icon.png" alt=""></a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle fixH" data-toggle="dropdown">О компании</a>
-                            <ul class="dropdown-menu">
+                <!--- end Menu ---->
 
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Контакты</a></li>
+                <div class="headerWrapTop">
+                    <div class="container fixCont1">
+                        <div class="row fixRowTop">
+                            <div class="col-md-3">
+                                <img  src="img/logotop.png" alt="">
+                            </div> 
 
-                            </ul>
-                        </li>
+                            <div class="col-md-6">
+                                <div class="phoneTopb">
+                                    <p>+7 (902) 982-76-31</p>
+                                    <a class="customBtn" data-toggle="modal" data-target="#myModal" href="#">Заказать звонок</a>
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">Заказать обратный звонок</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="" >
+                                                        <div class="inGrop">
+                                                            <input type="text" placeholder="Ваше имя">
+                                                        </div>
+                                                        <div class="inGrop">
+                                                            <input type="text" placeholder="Ваш номер телефона">
+                                                        </div>
+                                                        <button type="submit" class="btnGr" >Заказать</button>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
 
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle fixH" data-toggle="dropdown">Инвестору</a>
-                            <ul class="dropdown-menu wd-menu">
-                                <div class="col-md-6">
-                                    <li><a href="#">С чего начать </a></li>
-                                    <li><a href="#">Что такое ПАММ-счета?</a></li>
-                                    <li><a href="#">Что такое ПАММ-счет 2.0?</a></li>
-                                    <li><a href="#">Что такое ПАММ-фонды? </a></li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6" >
-                                    <li><a href="#">Что такое индексы?</a></li>
-                                    <li><a href="#">Составление ПАММ­портфеля</a></li>
-                                    <li><a href="#">Демонстративный счет инвестора</a></li>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="regGroup">
+                                    <a href="#"><img src="img/rega-forex.png" alt=""></a>
+                                    <a href="#"><img  src="img/rega-pant.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---- end Header ---->
+
+
+                    <!-----Contnet main page----->
+                    <!---- Carousel---->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <a href="#"><img src="img/44.png" alt="..."></a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#"><img src="img/2.png" alt="..."></a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#"><img src="img/3.png" alt="..."></a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#"><img src="img/4.png" alt="..."></a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#"><img src="img/5.png" alt="..."></a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                        <span class="slideLeft"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                        <span class="slideRight pull-right"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----- end Carousel --->
+
+                <!--- Tabs------->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div role="tabpanel">
+
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><span></span><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab" class="fixtab1">Отличие
+                                            ПАММ от других инвестиций</a></li>
+                                    <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab" class="fixtab2">Как заработать на инвестициях в ПАММ-счета?</a></li>
+                                    <li role="presentation"><a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab" class="fixtab3">Как работают ПАММ-счета?</a></li>
+                                    <li role="presentation"><a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab4">Калькулятор инвестиций</a></li>
+                                    <li role="presentation"><a href="tab5" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab5">Демонстративный счет</a></li>
+                                    <li role="presentation"><a href="tab6" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab5">Калькулятор инвестиций</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                                        <table class="table">
+                                            <tr id="corfont">
+                                                <td>Банковский депозит</td>
+                                                <td>Приобретение недвижимости</td>
+                                                <td class="pammTd1">Инвестирование в ПАММ-счета</td>
+                                                <td>Собственный бизнес</td>
+
+                                            </tr>
+                                            <tr class="pummTrcolor">
+                                                <td>Порог входа: $1</td>
+                                                <td>Порог входа: $50 000 </td>
+                                                <td class="pammTd2">Порог входа: $25 </td>
+                                                <td>Порог входа: $25 000</td>
+
+                                            </tr>
+                                            <tr class="pummTrcolor1">
+                                                <td>Прибыль: 0,5% в месяц </td>
+                                                <td>Прибыль: 3% в месяц</td>
+                                                <td class="pammTd3">Прибыль: 5%-50% в месяц</td>
+                                                <td>Прибыль: 5%-10% в месяц</td>
+
+                                            </tr>
+                                            <tr class="pummTrcolor">
+                                                <td><strong>Вывод средств:</strong>
+                                                    в течение 24 часов при угрозе применения штрафных санкций
+                                                </td>
+                                                <td><strong>Вывод средств:</strong>
+                                                    1 - 12 месяцев, определяется текущим спросом на рынке</td>
+                                                <td class="pammTd4"><strong>Вывод средств:</strong>
+                                                    в течение 30 минут - 7 дней в неделю, круглосуточно</td>
+                                                <td><strong>Вывод средств:</strong>
+                                                    Занимает много времени и зависит от типа ликвидности бизнеса</td>
+
+                                            </tr>
+                                            <tr class="pummTrcolor">
+                                                <td></td>
+                                                <td></td>
+                                                <td class="pammTd5 popoverMy">
+                                                    <a class="popoverAction tdLink" href="javascript:void(0);">Инвестировать!</a>
+
+                                                    <div class="PopRefa var3 clearfix">
+                                                        <div class="ltp">
+                                                            <a href="#"><img class="tdimg" src="img/popf.jpg" alt=""></a>
+                                                        </div>
+                                                        <div class="rtp">
+                                                            <a href="#"><img class="tdimg2" src="img/popp.jpg" alt=""></a>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="tab2">
+                                        <div>
+                                            <table class="table">
+                                                <tr class="howPan">
+                                                    <td>Что такое ПАММ счет?</td>
+                                                    <td>Как это работает?</td>
+                                                    <td>С чего мне начать?</td>
+
+                                                </tr>
+                                                <tr class="howPan2">
+                                                    <td>
+                                                        <p><strong>ПАММ</strong> — это специальный сервис, обеспечивающий взаимодействие трейдера с инвесторами. Он позволяет получать прибыль на рынке</p>
+                                                        <p>Форекс тем, кто не хочет заниматься торговлей самостоятельно. Инвестируя в опытных управляющих, Вы имеете возможность зарабатывать вместе с ними.</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>В нашей компании торгуют профессионалы с большим опытом. Убедиться в этом можно, просмотрев рейтинг ПАММ счетов.</p>
+                                                        <p>Самые успешные трейдеры - в ТОП-20. Вы можете выбрать управляющего, ознакомиться с его условиями сотрудничества, посмотреть историю торговли, задать ему вопросы на форуме.</p> 
+                                                    </td>
+                                                    <td class="howPan2">
+                                                        <p>Зарегистрируйтесь на сайте, а затем пополните свой счет на сумму инвестиций в Forex. Из рейтинга выбирайте управляющего и инвестируйте в него желаемую сумму средств.</p>
+                                                        <p>Сделки, совершенные управляющим, будут приносить Вам прибыль. Все средства Вы можете вывести в любой день недели круглосуточно за 30 минут!</p>
+                                                    </td>
+
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="popoverMy btnBLock4">
+                                            <a class="popoverAction inLink" href="javascript:void(0);">Зарегистрируйтесь!</a>
+
+                                            <div class="PopRefa var4 clearfix">
+                                                <div class="ltp">
+                                                    <a href="#"><img src="img/popf.jpg" alt=""></a>
+                                                </div>
+                                                <div class="rtp">
+                                                    <a href="#"><img  src="img/popp.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="tab3">
+                                        <div><img src="img/pammcheta.png" alt=""></div>
+                                        <div class="popoverMy">
+                                            <a class="popoverAction" href="javascript:void(0);">Зарегистрируйтесь!</a>
+
+                                            <div class="PopRefa var2 clearfix">
+                                                <div class="ltp">
+                                                    <a href="#"><img src="img/popf.jpg" alt=""></a>
+                                                </div>
+                                                <div class="rtp">
+                                                    <a href="#"><img src="img/popp.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="tab4">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="tab5">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="tab6">...</div>
                                 </div>
 
-                            </ul>
-                        </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----- end Tabs ------>
 
-                        <li class="fixNav1"><a href="#">Ввод / вывод денег</a></li>
+                <!----- block 2 ------>
+                <div class="container block2">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="warpQuest">
+                                <div class="questHead">
+                                    <h4>Часто задаваемые вопросы</h4>
+                                </div>
 
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle fixH" data-toggle="dropdown">Видеокурсы</a>
-                            <ul class="dropdown-menu">
-                                <li><a  href="#">Видеокурсы Форекс Тренд</a></li>
-                                <li><a href="#">Видеокурсы Пантеон Финанс</a></li>
-                            </ul>
-                        </li>
 
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle fixH" data-toggle="dropdown">Отчеты и статьи</a>
-                            <ul class="dropdown-menu">
-                                <li> <a href="#" >Недельный отчеты</a></li>
-                                <li><a href="#">Статьи</a></li>
-                            </ul>
-                        </li>
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    У меня нет знаний, смогу ли я стать успешным инвестором?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <div>
+                                                    Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Какие есть подводные камни?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <div>
+                                                    Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
+                                                    Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
+                                                    Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
+                                                    Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        <li><a class="fixH" href="#">Вопрос-ответ</a></li>
-                        <li><a class="fixNav2" href="#">Предупреждение о рисках</a></li>
-                        <li class="delemitra"></li>
-                    </ul>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Если управляющие успешно торгуют, зачем им я?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <div>
+                                                    Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
-        <!--- end Menu ---->
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                                    Такие высокие доходы, наверно, есть и риски?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <div>
+                                                    Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-        <div class="headerWrapTop">
-            <div class="container fixCont1">
-                <div class="row fixRowTop">
-                    <div class="col-md-3">
-                        <img  src="img/logotop.png" alt="">
-                    </div> 
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFive">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                                    Если мне понадобятся деньги, как быстро я смогу их вывести?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <div>
+                                                    Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                    <div class="col-md-6">
-                        <div class="phoneTopb">
-                            <p>+7 (902) 982-76-31</p>
-                            <a class="customBtn" data-toggle="modal" data-target="#myModal" href="#">Заказать звонок</a>
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingSix">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                                    Может мне лучше торговать самому, зачем мне управляющий?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <div>
+                                                    Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="qtCont"><a href="#">Все вопросы</a></div>
+                            </div><!-- wrapQuest -->
+
+                        </div><!-- col-md-6--->
+                        <div class="col-md-6">
+                            <div class="weekly">
+                                <div class="weeklyHead">
+                                    <h4>Недельный отчет</h4>
+                                </div>
+
+                                <div class="weeklyItem">
+                                    <div class="itemDate">
+                                        <span>10.08.2014</span>
+                                    </div>
+                                    <div class="itemHead ">
+                                        <a href="#"><h4>Отчет за неделю 27.10.14 - 31.10.14</h4></a>
+                                    </div>
+                                    <dv class="itemDesc row">
+                                        <div class=" col-md-5 leftDesc">
+                                            <div class="summa">
+                                                Cумма инвестиций: <span>1000 $</span>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-7 rightDesc">
+                                            <p>Доход в процентах: <span>24</span></p>
+                                            <p>Доход в деньгах: <span>1500 $</span></p>
+                                        </div>
+                                </div>
+
+                                <div class="weeklyItem weeklyBorder">
+                                    <div class="itemDate">
+                                        <span>10.08.2014</span>
+                                    </div>
+                                    <div class="itemHead ">
+                                        <a href="#"><h4>Отчет за неделю 27.10.14 - 31.10.14</h4></a>
+                                    </div>
+                                    <dv class="itemDesc row">
+                                        <div class=" col-md-5 leftDesc">
+                                            <div class="summa">
+                                                Cумма инвестиций: <span>1000 $</span>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-7 rightDesc">
+                                            <p>Доход в процентах: <span>15</span></p>
+                                            <p>Доход в деньгах: <span>150 $</span></p>
+                                        </div>
+                                </div>
+
+                                <div class="weeklyItem weeklyBorder">
+                                    <div class="itemDate">
+                                        <span>10.08.2014</span>
+                                    </div>
+                                    <div class="itemHead ">
+                                        <a href="#"><h4>Отчет за неделю 27.10.14 - 31.10.14</h4></a>
+                                    </div>
+                                    <dv class="itemDesc row">
+                                        <div class=" col-md-5 leftDesc">
+                                            <div class="summa">
+                                                Cумма инвестиций: <span>23000 $</span>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-7 rightDesc">
+                                            <p>Доход в процентах: <span>15</span></p>
+                                            <p>Доход в деньгах: <span>9448 $</span></p>
+                                        </div>
+                                </div>
+                                <div class="weekBtn"><a href="#">Все отчеты</a></div>
+
+                            </div>
+                        </div><!-- col-md-6--->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="wrapForex">
+                                <div class="forexHead">
+                                    <h4>Почему Форекст Тренд и Пантеон Финанс?</h4>
+                                </div>
+                                <div class="forItem clearfix">
+                                    <div class="leftFor"><span>1</span></div>
+                                    <div class="rightFor">
+                                        <p class="fixNumber">Исключили неторговые риски в отношениях трейдер - инвестор.</p>
+                                    </div>
+                                </div>
+                                <div class="forItem clearfix">
+                                    <div class="leftFor"><span>2</span></div>
+                                    <div class="rightFor">
+                                        <p>Предоставили инвесторам услуги опытных управляющих, а также инструменты мониторинга и принятия решений.</p>
+                                    </div>
+                                </div>
+                                <div class="forItem clearfix">
+                                    <div class="leftFor"><span>3</span></div>
+                                    <div class="rightFor">
+                                        <p>Предоставили инвесторам ясный и надежный способ диверсификации инвестиций (возможность легко и безопасно распределить инвестиции по разным инструментам).</p>
+                                    </div>
+                                </div>
+                                <div class="forItem clearfix">
+                                    <div class="leftFor"><span>4</span></div>
+                                    <div class="rightFor">
+                                        <p>Открыли управляющим доступ к инвестициям, многократно превышающим их собственные капиталы.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+
+                            <div class="respond">
+                                <div class="respHed">
+                                    <h4>Подпишитесь на рассылку новостей</h4>
+                                </div>
+                                <form action="" method="post">
+                                    <input type="text" placeholder="Ваше имя">
+                                    <input type="email" placeholder="Email">
+                                    <div class="resbtnWrap">
+                                        <input type="submit" value="Подписаться">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="invest"><img src="img/investor.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="row lastCont">
+                        <div class="col-md-6 popoverMy">
+                            <a class="popoverAction regaBtn2"  href="javascript:void(0);">Инвестировать</a>
+                            <div class="PopRefa clearfix">
+                                <div class="ltp">
+                                    <a href="#"><img src="img/popf.jpg" alt=""></a>
+                                </div>
+                                <div class="rtp">
+                                    <a href="#"><img src="img/popp.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <a  class="btnRega3" data-toggle="modal" data-target="#myModal2" href="#">Задать вопрос</a>
+                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel">Заказать обратный звонок</h4>
+                                            <h4 class="modal-title" id="myModalLabel">Задать вопрос</h4>
                                         </div>
                                         <div class="modal-body">
                                             <form action="" >
@@ -106,570 +586,97 @@
                                                     <input type="text" placeholder="Ваше имя">
                                                 </div>
                                                 <div class="inGrop">
-                                                    <input type="text" placeholder="Ваш номер телефона">
+                                                    <input type="text" placeholder="Ваш Email">
                                                 </div>
-                                                <button type="submit" class="btnGr" >Заказать</button>
+                                                <div class="inGrop">
+                                                    <textarea name="" id="questionArea" cols="30" rows="10">Ваш впорос</textarea>
+                                                </div>
+                                                <button type="submit" class="btnGr" >Отправить вопрос</button>
                                             </form>
                                         </div>
-                                        <div class="modal-footer">
-
-                                        </div>
+                                        <div class="modal-footer"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="regGroup">
-                            <a href="#"><img src="img/rega-forex.png" alt=""></a>
-                            <a href="#"><img  src="img/rega-pant.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!---- end Header ---->
 
+                </div><!---- end block2 ---->
 
-            <!-----Contnet main page----->
-            <!---- Carousel---->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
+                <div class="container block3 footer-block-text">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="footer-carusel" class="carousel slide" data-ride="carousel">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner footer-slider" role="listbox">
+                                    <div class="item active">
+                                        <h4>О компании и инвестициях</h4>
+                                        <p>Брокерская компания «Пантеон Финанс» специализируется на предоставлении услуг в сфере интернет-трейдинга и инвестиций.</p>
+                                        <p>«Пантеон Финанс» дает своим клиентам возможность получать доходы, намного превышающие даже самые смелые банковские предложения по депозитам.</p>
+                                        <p>Мы предлагаем невероятно удобную и простую систему управления своими инвестициями. При этом, широкий выбор профессиональных управляющих и различных  стратегий, позволяет инвесторам подбирать для себя самые комфортные способы. </p>
+                                    </div>
+                                </div>
 
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src="img/44.png" alt="...">
-                                    <div class="carousel-caption">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/2.png" alt="...">
-                                    <div class="carousel-caption">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/3.png" alt="...">
-                                    <div class="carousel-caption">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/4.png" alt="...">
-                                    <div class="carousel-caption">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img src="img/5.png" alt="...">
-                                    <div class="carousel-caption">
-                                    </div>
-                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control pull-left" href="#footer-carusel" role="button" data-slide="prev">
+                                    <span class="slideLeft"></span>
+                                    <span>Назад</span>
+                                </a>
+                                <a class="right carousel-control pull-right" href="#footer-carusel" role="button" data-slide="next">
+                                    <span class="slideRight pull-right"></span>
+                                    <span>Далее</span>
+                                </a>
                             </div>
-
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                <span class="slideLeft"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                <span class="slideRight pull-right"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!----- end Carousel --->
 
-        <!--- Tabs------->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div role="tabpanel">
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><span></span><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab" class="fixtab1">Отличие
-                                    ПАММ от других инвестиций</a></li>
-                            <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab" class="fixtab2">Как заработать на инвестициях в ПАММ-счета?</a></li>
-                            <li role="presentation"><a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab" class="fixtab3">Как работают ПАММ-счета?</a></li>
-                            <li role="presentation"><a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab4">Калькулятор инвестиций</a></li>
-                            <li role="presentation"><a href="tab5" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab5">Демонстративный счет</a></li>
-                            <li role="presentation"><a href="tab6" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab5">Калькулятор инвестиций</a></li>
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="tab1">
-                                <table class="table">
-                                    <tr id="corfont">
-                                        <td>Банковский депозит</td>
-                                        <td>Приобретение недвижимости</td>
-                                        <td class="pammTd1">Инвестирование в ПАММ-счета</td>
-                                        <td>Собственный бизнес</td>
-
-                                    </tr>
-                                    <tr class="pummTrcolor">
-                                        <td>Порог входа: $1</td>
-                                        <td>Порог входа: $50 000 </td>
-                                        <td class="pammTd2">Порог входа: $25 </td>
-                                        <td>Порог входа: $25 000</td>
-
-                                    </tr>
-                                    <tr class="pummTrcolor1">
-                                        <td>Прибыль: 0,5% в месяц </td>
-                                        <td>Прибыль: 3% в месяц</td>
-                                        <td class="pammTd3">Прибыль: 5%-50% в месяц</td>
-                                        <td>Прибыль: 5%-10% в месяц</td>
-
-                                    </tr>
-                                    <tr class="pummTrcolor">
-                                        <td><strong>Вывод средств:</strong>
-                                            в течение 24 часов при угрозе применения штрафных санкций
-                                        </td>
-                                        <td><strong>Вывод средств:</strong>
-                                            1 - 12 месяцев, определяется текущим спросом на рынке</td>
-                                        <td class="pammTd4"><strong>Вывод средств:</strong>
-                                            в течение 30 минут - 7 дней в неделю, круглосуточно</td>
-                                        <td><strong>Вывод средств:</strong>
-                                            Занимает много времени и зависит от типа ликвидности бизнеса</td>
-
-                                    </tr>
-                                    <tr class="pummTrcolor">
-                                        <td></td>
-                                        <td></td>
-                                        <td class="pammTd5 popoverMy">
-                                            <a class="popoverAction tdLink" href="javascript:void(0);">Инвестировать!</a>
-
-                                            <div class="PopRefa var3 clearfix">
-                                                <div class="ltp">
-                                                    <a href="#"><img class="tdimg" src="img/popf.jpg" alt=""></a>
-                                                </div>
-                                                <div class="rtp">
-                                                    <a href="#"><img class="tdimg2" src="img/popp.jpg" alt=""></a>
-                                                </div>
-                                            </div>
-
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                </table>
+                <!----footer ------> 
+                <div class="wrapFooter">
+                    <div class="container">
+                        <div class="row fooRow">
+                            <div class="col-md-3">
+                                <ul class="footerNavi">
+                                    <li class="bigItem"><a  href="#">О компании</a></li>
+                                    <li><a href="#">О нас</a></li>
+                                    <li class="lididvider" ><a href="#">Контакты</a></li>
+                                    <li class="bigItem"><a  href="#">Отчеты и статьи</a></li>
+                                    <li><a href="#">Недельный отчеты</a></li>
+                                    <li class="lididvider" ><a href="#">Статьи</a></li>
+                                    <li class="bigItem"><a  href="#">Вопрос-ответ</a></li>
+                                </ul>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="tab2">
-                                <div>
-                                    <table class="table">
-                                        <tr class="howPan">
-                                            <td>Что такое ПАММ счет?</td>
-                                            <td>Как это работает?</td>
-                                            <td>С чего мне начать?</td>
-
-                                        </tr>
-                                        <tr class="howPan2">
-                                            <td>
-                                                <p><strong>ПАММ</strong> — это специальный сервис, обеспечивающий взаимодействие трейдера с инвесторами. Он позволяет получать прибыль на рынке</p>
-                                                <p>Форекс тем, кто не хочет заниматься торговлей самостоятельно. Инвестируя в опытных управляющих, Вы имеете возможность зарабатывать вместе с ними.</p>
-                                            </td>
-                                            <td>
-                                                <p>В нашей компании торгуют профессионалы с большим опытом. Убедиться в этом можно, просмотрев рейтинг ПАММ счетов.</p>
-                                                <p>Самые успешные трейдеры - в ТОП-20. Вы можете выбрать управляющего, ознакомиться с его условиями сотрудничества, посмотреть историю торговли, задать ему вопросы на форуме.</p> 
-                                            </td>
-                                            <td class="howPan2">
-                                                <p>Зарегистрируйтесь на сайте, а затем пополните свой счет на сумму инвестиций в Forex. Из рейтинга выбирайте управляющего и инвестируйте в него желаемую сумму средств.</p>
-                                                <p>Сделки, совершенные управляющим, будут приносить Вам прибыль. Все средства Вы можете вывести в любой день недели круглосуточно за 30 минут!</p>
-                                            </td>
-
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="popoverMy btnBLock4">
-                                    <a class="popoverAction inLink" href="javascript:void(0);">Зарегистрируйтесь!</a>
-
-                                    <div class="PopRefa var4 clearfix">
-                                        <div class="ltp">
-                                            <a href="#"><img src="img/popf.jpg" alt=""></a>
-                                        </div>
-                                        <div class="rtp">
-                                            <a href="#"><img  src="img/popp.jpg" alt=""></a>
-                                        </div>
-                                    </div>
-
-                                </div>
+                            <div class="col-md-3">
+                                <ul class="footerNavi">
+                                    <li class="bigItem" ><a  href="#">Инвестору</a></li>
+                                    <li><a href="#">С чего начать</a></li>
+                                    <li><a href="#">Что такое ПАММ-счета?</a></li>
+                                    <li><a href="#">Что такое ПАММ-счет 2.0?</a></li>
+                                    <li><a href="#">Что такое ПАММ-фонды?</a></li>
+                                    <li><a href="#">Что такое индексы?</a></li>
+                                    <li><a href="#">Составление ПАММ-портфеля</a></li>
+                                    <li><a href="#">Демонстративный счет инвестора</a></li>
+                                </ul>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="tab3">
-                                <div><img src="img/pammcheta.png" alt=""></div>
-                                <div class="popoverMy">
-                                    <a class="popoverAction" href="javascript:void(0);">Зарегистрируйтесь!</a>
-
-                                    <div class="PopRefa var2 clearfix">
-                                        <div class="ltp">
-                                            <a href="#"><img src="img/popf.jpg" alt=""></a>
-                                        </div>
-                                        <div class="rtp">
-                                            <a href="#"><img src="img/popp.jpg" alt=""></a>
-                                        </div>
-                                    </div>
-
-                                </div>
+                            <div class="col-md-3">
+                                <ul class="footerNavi">
+                                    <li class="bigItem" ><a  href="#">Ввод / вывод денег</a></li>
+                                    <li class="bigItem" ><a  href="#">Видеокурсы</a></li>
+                                    <li><a href="#">Видеокурсы Форекс Тренд	</a></li>
+                                    <li class="lididvider"><a href="#">Видеокурсы Пантеон Финанс</a></li>
+                                    <li class="bigItem" ><a  href="#">Предупреждение о рисках</a></li>
+                                </ul>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="tab4">...</div>
-                            <div role="tabpanel" class="tab-pane" id="tab5">...</div>
-                            <div role="tabpanel" class="tab-pane" id="tab6">...</div>
+                            <div class="col-md-3">
+                                <img class="disque" src="img/botlogo.png" alt="">
+                                <img class="disque" src="img/houseBottom.png" alt="">
+                            </div>
                         </div>
-
+                        <div class="alente"><a href="#">Создание сайта <img src="img/alente.png" alt=""></a></div>
                     </div>
                 </div>
             </div>
         </div>
-        <!----- end Tabs ------>
-
-        <!----- block 2 ------>
-        <div class="container block2">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="warpQuest">
-                        <div class="questHead">
-                            <h4>Часто задаваемые вопросы</h4>
-                        </div>
-
-
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingOne">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            У меня нет знаний, смогу ли я стать успешным инвестором?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="panel-body">
-                                        <div>
-                                            Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Какие есть подводные камни?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body">
-                                        <div>
-                                            Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
-                                            Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
-                                            Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
-                                            Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Если управляющие успешно торгуют, зачем им я?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body">
-                                        <div>
-                                            Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                            Такие высокие доходы, наверно, есть и риски?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body">
-                                        <div>
-                                            Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFive">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                            Если мне понадобятся деньги, как быстро я смогу их вывести?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body">
-                                        <div>
-                                            Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingSix">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                                            Может мне лучше торговать самому, зачем мне управляющий?
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body">
-                                        <div>
-                                            Для того, чтобы стать успешным инвестором не требуется каких-либо специальных навыков. Просто выберите управляющего трейдера, стратегия которого Вам импонирует, и инвестируйте в него. После этого Вам не нужно больше ничего делать. В любой момент Вы можете вывести Ваши средства и прибыль удобным для Вас способом.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="qtCont"><a href="#">Все вопросы</a></div>
-                    </div><!-- wrapQuest -->
-
-                </div><!-- col-md-6--->
-                <div class="col-md-6">
-                    <div class="weekly">
-                        <div class="weeklyHead">
-                            <h4>Недельный отчет</h4>
-                        </div>
-
-                        <div class="weeklyItem">
-                            <div class="itemDate">
-                                <span>10.08.2014</span>
-                            </div>
-                            <div class="itemHead ">
-                                <a href="#"><h4>Отчет за неделю 27.10.14 - 31.10.14</h4></a>
-                            </div>
-                            <dv class="itemDesc row">
-                                <div class=" col-md-5 leftDesc">
-                                    <div class="summa">
-                                        Cумма инвестиций: <span>1000 $</span>
-                                    </div>
-                                </div>
-                                <div class=" col-md-7 rightDesc">
-                                    <p>Доход в процентах: <span>24</span></p>
-                                    <p>Доход в деньгах: <span>1500 $</span></p>
-                                </div>
-                        </div>
-
-                        <div class="weeklyItem weeklyBorder">
-                            <div class="itemDate">
-                                <span>10.08.2014</span>
-                            </div>
-                            <div class="itemHead ">
-                                <a href="#"><h4>Отчет за неделю 27.10.14 - 31.10.14</h4></a>
-                            </div>
-                            <dv class="itemDesc row">
-                                <div class=" col-md-5 leftDesc">
-                                    <div class="summa">
-                                        Cумма инвестиций: <span>1000 $</span>
-                                    </div>
-                                </div>
-                                <div class=" col-md-7 rightDesc">
-                                    <p>Доход в процентах: <span>15</span></p>
-                                    <p>Доход в деньгах: <span>150 $</span></p>
-                                </div>
-                        </div>
-
-                        <div class="weeklyItem weeklyBorder">
-                            <div class="itemDate">
-                                <span>10.08.2014</span>
-                            </div>
-                            <div class="itemHead ">
-                                <a href="#"><h4>Отчет за неделю 27.10.14 - 31.10.14</h4></a>
-                            </div>
-                            <dv class="itemDesc row">
-                                <div class=" col-md-5 leftDesc">
-                                    <div class="summa">
-                                        Cумма инвестиций: <span>23000 $</span>
-                                    </div>
-                                </div>
-                                <div class=" col-md-7 rightDesc">
-                                    <p>Доход в процентах: <span>15</span></p>
-                                    <p>Доход в деньгах: <span>9448 $</span></p>
-                                </div>
-                        </div>
-                        <div class="weekBtn"><a href="#">Все отчеты</a></div>
-
-                    </div>
-                </div><!-- col-md-6--->
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="wrapForex">
-                        <div class="forexHead">
-                            <h4>Почему Форекст Тренд и Пантеон Финанс?</h4>
-                        </div>
-                        <div class="forItem clearfix">
-                            <div class="leftFor"><span>1</span></div>
-                            <div class="rightFor">
-                                <p class="fixNumber">Исключили неторговые риски в отношениях трейдер - инвестор.</p>
-                            </div>
-                        </div>
-                        <div class="forItem clearfix">
-                            <div class="leftFor"><span>2</span></div>
-                            <div class="rightFor">
-                                <p>Предоставили инвесторам услуги опытных управляющих, а также инструменты мониторинга и принятия решений.</p>
-                            </div>
-                        </div>
-                        <div class="forItem clearfix">
-                            <div class="leftFor"><span>3</span></div>
-                            <div class="rightFor">
-                                <p>Предоставили инвесторам ясный и надежный способ диверсификации инвестиций (возможность легко и безопасно распределить инвестиции по разным инструментам).</p>
-                            </div>
-                        </div>
-                        <div class="forItem clearfix">
-                            <div class="leftFor"><span>4</span></div>
-                            <div class="rightFor">
-                                <p>Открыли управляющим доступ к инвестициям, многократно превышающим их собственные капиталы.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-4">
-
-                    <div class="respond">
-                        <div class="respHed">
-                            <h4>Подпишитесь на рассылку новостей</h4>
-                        </div>
-                        <form action="" method="post">
-                            <input type="text" placeholder="Ваше имя">
-                            <input type="email" placeholder="Email">
-                            <div class="resbtnWrap">
-                                <input type="submit" value="Подписаться">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="invest"><img src="img/investor.png" alt=""></div>
-                </div>
-            </div>
-
-            <div class="row lastCont">
-                <div class="col-md-6 popoverMy">
-                    <a class="popoverAction regaBtn2"  href="javascript:void(0);">Инвестировать</a>
-                    <div class="PopRefa clearfix">
-                        <div class="ltp">
-                            <a href="#"><img src="img/popf.jpg" alt=""></a>
-                        </div>
-                        <div class="rtp">
-                            <a href="#"><img src="img/popp.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <a  class="btnRega3" data-toggle="modal" data-target="#myModal2" href="#">Задать вопрос</a>
-                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title" id="myModalLabel">Задать вопрос</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="" >
-                                        <div class="inGrop">
-                                            <input type="text" placeholder="Ваше имя">
-                                        </div>
-                                        <div class="inGrop">
-                                            <input type="text" placeholder="Ваш Email">
-                                        </div>
-                                        <div class="inGrop">
-                                            <textarea name="" id="questionArea" cols="30" rows="10">Ваш впорос</textarea>
-                                        </div>
-                                        <button type="submit" class="btnGr" >Отправить вопрос</button>
-                                    </form>
-                                </div>
-                                <div class="modal-footer"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div><!---- end block2 ---->
-
-        <div class="container block3">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="empty">
-                        <h4>О компании и инвестициях</h4>
-                        <p>Брокерская компания «Пантеон Финанс» специализируется на предоставлении услуг в сфере интернет-трейдинга и инвестиций.</p>
-                        <p>«Пантеон Финанс» дает своим клиентам возможность получать доходы, намного превышающие даже самые смелые банковские предложения по депозитам.</p>
-                        <p>Мы предлагаем невероятно удобную и простую систему управления своими инвестициями. При этом, широкий выбор профессиональных управляющих и различных  стратегий, позволяет инвесторам подбирать для себя самые комфортные способы. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!----footer ------> 
-        <div class="wrapFooter">
-            <div class="container">
-                <div class="row fooRow">
-                    <div class="col-md-3">
-                        <ul class="footerNavi">
-                            <li class="bigItem"><a  href="#">О компании</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li class="lididvider" ><a href="#">Контакты</a></li>
-                            <li class="bigItem"><a  href="#">Отчеты и статьи</a></li>
-                            <li><a href="#">Недельный отчеты</a></li>
-                            <li class="lididvider" ><a href="#">Статьи</a></li>
-                            <li class="bigItem"><a  href="#">Вопрос-ответ</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="footerNavi">
-                            <li class="bigItem" ><a  href="#">Инвестору</a></li>
-                            <li><a href="#">С чего начать</a></li>
-                            <li><a href="#">Что такое ПАММ-счета?</a></li>
-                            <li><a href="#">Что такое ПАММ-счет 2.0?</a></li>
-                            <li><a href="#">Что такое ПАММ-фонды?</a></li>
-                            <li><a href="#">Что такое индексы?</a></li>
-                            <li><a href="#">Составление ПАММ-портфеля</a></li>
-                            <li><a href="#">Демонстративный счет инвестора</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <ul class="footerNavi">
-                            <li class="bigItem" ><a  href="#">Ввод / вывод денег</a></li>
-                            <li class="bigItem" ><a  href="#">Видеокурсы</a></li>
-                            <li><a href="#">Видеокурсы Форекс Тренд	</a></li>
-                            <li class="lididvider"><a href="#">Видеокурсы Пантеон Финанс</a></li>
-                            <li class="bigItem" ><a  href="#">Предупреждение о рисках</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <img class="disque" src="img/botlogo.png" alt="">
-                        <img class="disque" src="img/houseBottom.png" alt="">
-                    </div>
-                </div>
-                <div class="alente"><a href="#">Создание сайта <img src="img/alente.png" alt=""></a></div>
-            </div>
-        </div>
-
         <!-- Scripts -->
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
