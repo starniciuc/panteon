@@ -1548,7 +1548,6 @@ h3{
     color: #413c5f;
     text-decoration: none;
 }
-
 .wrapSubmitQA{
     text-align: center;
     padding: 10px 0 0 0;
@@ -2179,6 +2178,85 @@ li.activeSubNavi:last-child{
     z-index: 50;
     margin-left: 300px;
     width: 300px;
+}
+.investors-hover{
+    display: none;
+    position: absolute;
+    bottom: 73px;
+    left: 50%;
+    margin-left: -150px;
+}
+.inner-block{
+    border: 2px solid #a9a197;
+    border-radius: 8px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.58);
+    width: 280px;
+    height: 170px;
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(230,230,230,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(230,230,230,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(230,230,230,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(230,230,230,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(230,230,230,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+
+    text-align: center;
+    position: relative;
+}
+.inner-block span.down{
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    margin-left: -10px;
+    width: 19px;
+    height: 13px;
+    background: url("../img/arraw-drop.png") no-repeat 0 0;
+    display: block;
+}
+.inner-block a{
+    background: none;
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+
+}
+.inner-block a{
+    max-width: 100%;
+}
+.inner-block h1{
+    font-size: 18px;
+    color: #5b548d;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.41);
+    text-align: center;
+    margin: 0;
+    padding: 10px 0px;
+    background: rgb(199,192,183); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(199,192,183,1) 0%, rgba(169,161,152,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(199,192,183,1)), color-stop(100%,rgba(169,161,152,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(199,192,183,1) 0%,rgba(169,161,152,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(199,192,183,1) 0%,rgba(169,161,152,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(199,192,183,1) 0%,rgba(169,161,152,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(199,192,183,1) 0%,rgba(169,161,152,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c0b7', endColorstr='#a9a198',GradientType=0 ); /* IE6-9 */
+}
+.inner-block a:hover{
+    background: none;
+   display: inline-block;
+    width: auto;
+    padding: 0;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+}
+.goInvest{
+    position: relative;
+}
+.goInvest:hover .investors-hover{
+    display: block;
 }
 @media screen and (max-width: 1200px) { 
     .navbar{
