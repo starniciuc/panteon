@@ -2264,6 +2264,10 @@ li.activeSubNavi:last-child{
 .goInvest:hover .investors-hover{
     display: block;
 }
+.goInvest.index-page a{
+    background-size: 100% auto;
+    padding-top: 8px;
+}
 @media screen and (max-width: 1200px) { 
     .navbar{
         margin-bottom: 0;
