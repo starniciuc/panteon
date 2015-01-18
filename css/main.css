@@ -96,7 +96,13 @@ li.delemitra:first-child{
 li.delemitra:last-child{
     border-right: none;
 }
+.navbar-nav li > .submenu{
+    display: none;
+}
 
+.navbar-nav li:hover > .submenu{
+    display: block;
+}
 
 .dropdown-menu{
     background: #a49ca7; 
