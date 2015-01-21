@@ -1854,7 +1854,7 @@ li.activeSubNavi:last-child{
 .rightlink a:hover{
     text-decoration: none;
 }
-
+/*
 .rightlink a:hover .leftlink span{
     color: #fff;
 }
@@ -1863,7 +1863,7 @@ li.activeSubNavi:last-child{
     background-color: #eff4fb;
     border-radius: 6px;
 }
-
+*/
 .leftlink span{
     background-image: url(../img/circle.png);
     background-repeat: no-repeat;
