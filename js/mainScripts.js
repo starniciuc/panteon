@@ -24,5 +24,17 @@ $( document ).ready(function() {
             $(".regGroup").removeClass(("scrolling"));
         }
     });
+    
+    $(".goInvest > a").click(function(){
+        if($(window).width()<768){
+            $(".investors-hover").hide();
+            var $p = $(this).parents(".goInvest");
+            var c = $p.find(".investors-hover");
+            //console.log(c);
+            c.css("display","block");
+        }else{
+            $(".investors-hover").hide();
+        }
+    });
 });
 

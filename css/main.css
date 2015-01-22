@@ -502,7 +502,9 @@ a.collapsed{
     color: #4e4682;
     text-decoration: underline;
 }
-
+a.collapsed:hover{
+    text-decoration: none;
+}
 .qtCont{
     text-align: center;
     padding: 10px;
@@ -1355,7 +1357,7 @@ input[type=text],
 /*---------------- Video----------------------*/
 
 .videotab li a img{
-    height: 46px;
+    max-height: 100%;
     margin-top: 5px;
 }
 .videotab{
@@ -2127,7 +2129,7 @@ li.activeSubNavi:last-child{
 }
 .nav.nav-tabs.videotab li{
     width: 35%;
-    margin-right: 5%;
+    margin-right: 1%;
 }
 .PopRefa{
     display: none;
@@ -2262,7 +2264,7 @@ li.activeSubNavi:last-child{
     position: relative;
 }
 .goInvest:hover .investors-hover{
-    display: block;
+    display: block !important;
 }
 .goInvest.index-page a{
     background-size: 100% auto;
@@ -2272,7 +2274,7 @@ li.activeSubNavi:last-child{
     padding: 0;
 }
 .goInvest.index-page.reg .investors-hover {
-    bottom: 15px;
+    bottom: 8px;
     left: 100%;
     margin-left: -280px;
 }
