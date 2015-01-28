@@ -1,0 +1,93 @@
+/* Ion.RangeSlider, Flat UI Skin
+// css version 2.0.0
+// © Denis Ineshin, 2014    https://github.com/IonDen
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Skin details */
+
+.irs-line-mid,
+.irs-line-left,
+.irs-line-right,
+.irs-bar,
+.irs-bar-edge,
+.irs-slider {
+    background: url(../img/ranger.png) repeat-x;
+}
+
+.irs {
+    height: 40px;
+}
+.irs-with-grid {
+    height: 60px;
+}
+.irs-line {
+    height: 12px; top: 25px;
+}
+.irs-line-left {
+    height: 13px;
+    background-position: 0 -15px;
+}
+.irs-line-mid {
+    height: 13px;
+    background-position: 0 0;
+}
+.irs-line-right {
+    height: 13px;
+    background-position: 100% -15px;
+}
+
+.irs-bar {
+    height: 13px; top: 25px;
+    background-position: 0 -30px;
+}
+.irs-bar-edge {
+    top: 25px;
+    height: 12px; width: 9px;
+    background-position: 0 -44px;
+}
+
+.irs-shadow {
+    height: 3px; top: 34px;
+    background: #000;
+    opacity: 0.25;
+}
+.lt-ie9 .irs-shadow {
+    filter: alpha(opacity=25);
+}
+
+.irs-slider {
+    width: 10px; 
+    height: 20px;
+    top: 22px;
+    background-position: 2px -59px;
+}
+
+
+.irs-min, .irs-max {
+    color: #000;
+    font-size: 15px; line-height: 1.333;
+    text-shadow: none;
+    bottom: -20px; 
+}
+
+.marg-10{
+    margin-bottom: 10px;
+}
+
+.irs-from, .irs-to, .irs-single {
+    color: #413c5f;
+    font-size: 15px; 
+    line-height: 1.333;
+    text-shadow: none;
+    font-weight: bold;
+    bottom: -24px;
+    top: auto;
+}
+
+.irs-grid-pol {
+    background: #e1e4e9;
+}
+.irs-grid-text {
+    color: #999;
+}

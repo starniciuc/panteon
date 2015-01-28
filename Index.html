@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Главная</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/ion.rangeSlider.css" rel="stylesheet" type="text/css"/>
+        <link href="css/ion.rangeSlider.skinFlat.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -183,8 +185,8 @@
                                     <li role="presentation"><a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab" class="fixtab2">Как заработать на инвестициях в ПАММ-счета?</a></li>
                                     <li role="presentation"><a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab" class="fixtab3">Как работают ПАММ-счета?</a></li>
                                     <li role="presentation"><a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab4">Калькулятор инвестиций</a></li>
-                                    <li role="presentation"><a href="tab5" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab5">Демонстративный счет</a></li>
-                                    <li role="presentation"><a href="tab6" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab5">Калькулятор инвестиций</a></li>
+                                    <li role="presentation"><a href="#tab5" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab5">Демонстративный счет</a></li>
+                                    <li role="presentation"><a href="#tab6" aria-controls="settings" role="tab" data-toggle="tab" class="fixtab5">Калькулятор инвестиций</a></li>
                                 </ul>
 
                                 <!-- Tab panes -->
@@ -306,7 +308,187 @@
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="tab4">...</div>
                                     <div role="tabpanel" class="tab-pane" id="tab5">...</div>
-                                    <div role="tabpanel" class="tab-pane" id="tab6">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="tab6">
+                                        <div class="calculator">
+                                            <div class="row">
+                                                <div class="col-sm-9">
+                                                    <div class="first-block">
+                                                        <div class="row marg-10">
+                                                            <div class="col-md-4">
+                                                                <h4>Сумма инвестиций</h4>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input type="text" id="range2" name="example_name" value="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row marg-10">
+                                                            <div class="col-md-4">
+                                                                <h4>Количество торговых периодов</h4>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <input type="text" id="range" name="example_name" value="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h3>Выбирите управляющего (трейдера)</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c1" id="c1">
+                                                                    <label for="c1">sven 7031</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c2" id="c2">
+                                                                    <label for="c2">Ahmedos 558616</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c3" id="c3">
+                                                                    <label for="c3">sean 561368</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c4" id="c4">
+                                                                    <label for="c4">veronika 7165</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c5" id="c5">
+                                                                    <label for="c5">Avas 5995</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c6" id="c6">
+                                                                    <label for="c6">Kuznets 561375</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c7" id="c7">
+                                                                    <label for="c7">ubunt 563732</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c8" id="c8">
+                                                                    <label for="c8">twilight 563903</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c1" id="c1">
+                                                                    <label for="c1">TP 6402</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c2" id="c2">
+                                                                    <label for="c2">Jborn 518906</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c3" id="c3">
+                                                                    <label for="c3">Hozyin 534457</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c4" id="c4">
+                                                                    <label for="c4">investobolin 10253</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c5" id="c5">
+                                                                    <label for="c5">Patrik 11402</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c6" id="c6">
+                                                                    <label for="c6">votfx 520050</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c7" id="c7">
+                                                                    <label for="c7">Klyaksa 519959</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c8" id="c8">
+                                                                    <label for="c8">AlexZhuk 7093</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c1" id="c1">
+                                                                    <label for="c1">Kraken 518134</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c2" id="c2">
+                                                                    <label for="c2">Maksim 5000182</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c3" id="c3">
+                                                                    <label for="c3">Otmar 11695</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c4" id="c4">
+                                                                    <label for="c4">Gelios2 5000419</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c5" id="c5">
+                                                                    <label for="c5">Hermes2 5000164</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c6" id="c6">
+                                                                    <label for="c6">Floringo2 5000813</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c7" id="c7">
+                                                                    <label for="c7">Trader 5000099</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c8" id="c8">
+                                                                    <label for="c8">SkyFx 5000105</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c1" id="c1">
+                                                                    <label for="c1">Fenix 5000106</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c2" id="c2">
+                                                                    <label for="c2">Perseus 5000194</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c3" id="c3">
+                                                                    <label for="c3">Maksim 5000290</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c4" id="c4">
+                                                                    <label for="c4">Mad Wolf 5002970</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c5" id="c5">
+                                                                    <label for="c5">Skilled 5000080</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c6" id="c6">
+                                                                    <label for="c6">Jakov Fetisov 5003680</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c7" id="c7">
+                                                                    <label for="c7">Lion 5000100</label>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="checkbox" name="c8" id="c8">
+                                                                    <label for="c8">Valex 7061</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="right-block-side">
+                                                        <div class="link-section">
+                                                            <a href="#">Расчет проводится на основе<br> реальной статистики с<br>  1 января 2014</a>
+                                                        </div>
+
+                                                        <h1>Ваш доход:</h1>
+                                                        <h2>$ 3892.00</h2>
+
+                                                        <a href="#" class="goTry">Хочу поробовать!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -694,6 +876,20 @@
         <!-- Scripts -->
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/ion.rangeSlider.min.js" type="text/javascript"></script>
         <script src="js/mainScripts.js"></script>
+        <script>
+            $("#range2").ionRangeSlider({
+                min: 100,
+                max: 1000,
+                from: 550
+            });
+
+            $("#range").ionRangeSlider({
+                min: 100,
+                max: 10000,
+                from: 200
+            });
+        </script>
     </body>
 </html>

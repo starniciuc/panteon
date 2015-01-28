@@ -284,7 +284,8 @@ li.delemitra:last-child{
 #tab2,
 #tab3,
 #tab4,
-#tab5{
+#tab5, 
+#tab6{
     background-color: #fff;
     padding: 25px 50px;
     border-radius: 0 0 10px 10px;
@@ -2253,7 +2254,7 @@ li.activeSubNavi:last-child{
 }
 .inner-block a:hover{
     background: none;
-   display: inline-block;
+    display: inline-block;
     width: auto;
     padding: 0;
     height: 120px;
@@ -2283,13 +2284,13 @@ li.activeSubNavi:last-child{
 .calendar{
     box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.45);
     background: rgb(255,255,255); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -2319,13 +2320,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .calendar .header-calendar .year .next-year span{
     display: block;
-     background: url("../img/calendar-tool.png") no-repeat 0 0px;
+    background: url("../img/calendar-tool.png") no-repeat 0 0px;
     width: 9px;
     height: 12px; 
 }
 .calendar .header-calendar .year .prev-year span{
     display: block;
-     background: url("../img/calendar-tool.png") no-repeat -9px 0px;
+    background: url("../img/calendar-tool.png") no-repeat -9px 0px;
     width: 9px;
     height: 12px; 
 }
@@ -2362,6 +2363,88 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     width: 30px;
     height: 30px;
     float: right;
+}
+
+.calculator{
+    border: 1px solid #bab0a5;
+    background-color: #eff4fd;
+}
+.right-block-side{
+    background: rgb(229,209,144); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(229,209,144,1) 0%, rgba(205,183,117,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,209,144,1)), color-stop(100%,rgba(205,183,117,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(229,209,144,1) 0%,rgba(205,183,117,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(229,209,144,1) 0%,rgba(205,183,117,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(229,209,144,1) 0%,rgba(205,183,117,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(229,209,144,1) 0%,rgba(205,183,117,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5d190', endColorstr='#cdb775',GradientType=0 ); /* IE6-9 */
+    height: 400px;
+}
+.right-block-side .link-section{
+    color: #4a4284;
+    font-size: 13px;
+    text-decoration: underline;
+    border-bottom: 1px solid #d4bf7c;
+    padding: 20px;
+    text-align: center;
+}
+.right-block-side h1{
+    font-size: 26px;
+    color: #6e6693;
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 80px;
+}
+
+.right-block-side h2{
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 80px;
+}
+.calculator h3{
+    font-size: 17px;
+    font-weight: 700;
+    color: #4a4284;
+    margin: 15px 0;
+}
+.calculator h4{
+    font-size: 16px;
+    color: #4a4284;
+    font-weight: normal;
+}
+.calculator .first-block{
+    padding: 10px;
+}
+.calculator label{
+    font-size: 13px;
+    color: #0c0c0c;
+    font-weight: normal;
+}
+.calculator .form-group{
+    margin-bottom: 0px;
+    margin-left: 4px;
+}
+.firs-line{
+    background-color: #e1eafb;
+}
+.goTry:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+.goTry {
+    background-image: url("../img/regaBtn.png");
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 15px;
+    height: 38px;
+    padding: 7px 20px 20px 27px;
+    text-decoration: none;
+    width: 173px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 @media screen and (max-width: 1200px) { 
     .navbar{
