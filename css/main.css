@@ -285,7 +285,8 @@ li.delemitra:last-child{
 #tab3,
 #tab4,
 #tab5, 
-#tab6{
+#tab6,
+.whatPamm .tab-pane{
     background-color: #fff;
     padding: 25px 50px;
     border-radius: 0 0 10px 10px;
@@ -2045,7 +2046,7 @@ li.activeSubNavi:last-child{
 
 .tablePamm tr td:nth-child(3){
     font-weight: bold;
-    text-align: right;
+    text-align: center;
 }
 
 .tablePamm tr td:nth-child(4){
@@ -2762,6 +2763,12 @@ li.activeSubNavi:last-child{
     .block2{
         width: 100%;
     }
+    .tab-pane img{
+        max-width: 100%;
+    }
+    .regGroup.scrolling{
+        position: relative;
+    }
 
 }
 @media (max-width: 767px) {
@@ -2787,6 +2794,17 @@ li.activeSubNavi:last-child{
         width: 100%;
     }
     .leftReport{
+        width: 100%;
+    }
+    .table tr td{
+        display: block;
+        width: 100%;
+    }
+    .table tr td:first-child{
+        margin-bottom: 20px;
+    }
+    
+    .block3{
         width: 100%;
     }
 }
