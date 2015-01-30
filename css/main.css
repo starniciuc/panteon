@@ -746,7 +746,9 @@ a.collapsed:hover{
     font-size: 18px;
     background-color: transparent;
 }
-
+.respond form input[type=submit]:hover{
+	opacity: 0.8;
+}
 .respond form input[type=submit]:before{
 
 }
@@ -1140,7 +1142,8 @@ input[type=text],
     margin-top: 20px;
 }
 
-.inve form input[type=submit]:hover{
+.inve form input[type=submit]:hover,
+.inve form input[type="button"]:hover{
     opacity: 0.8;
 }
 
@@ -2215,7 +2218,8 @@ li.activeSubNavi:last-child{
 .inner-block a{
     max-width: 100%;
 }
-.inner-block h1{
+.inner-block h1,
+.right-block-side .inner-block h1{
     font-size: 18px;
     color: #5b548d;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.41);
@@ -2323,7 +2327,7 @@ li.activeSubNavi:last-child{
     margin: 0;
 }
 .calendar .calendar-body ul li a{
-    font-size: 14px;
+    font-size: 13px;
     color: #3f3a5c;
     padding-left: 3px;
     padding-right: 3px;
@@ -2408,11 +2412,21 @@ li.activeSubNavi:last-child{
 .firs-line{
     background-color: #e1eafb;
 }
-.goTry:hover {
-    opacity: 0.7;
+.goInvest .goTry:hover {
+	background-image: url("../img/regaBtn.png");
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 15px;
+    height: 38px;
+    padding: 7px 20px 20px 27px;
+    text-decoration: none;
+    width: 173px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
     text-decoration: none;
 }
-.goTry {
+.goInvest .goTry {
     background-image: url("../img/regaBtn.png");
     background-repeat: no-repeat;
     color: #fff;
@@ -2425,7 +2439,12 @@ li.activeSubNavi:last-child{
     margin: 0 auto;
     margin-bottom: 20px;
 }
-
+.right-block-side .goInvest .investors-hover{
+	bottom: 45px;
+}
+.right-block-side .goInvest{
+	padding: 0;
+}
 .bx-controls-direction .bx-prev, .bx-controls-direction .bx-next{
 	vertical-align: middle;
     color: #8896b6;
@@ -2467,7 +2486,16 @@ li.activeSubNavi:last-child{
 .bx-controls-direction .bx-prev.disabled{
 	display: none;
 }
+.calendar:after{
+	content: " ";
+	clear: both;
+	display: table;
+}
 @media screen and (max-width: 1200px) { 
+	.nav > li > a{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
     .navbar{
         margin-bottom: 0;
     }
@@ -2631,7 +2659,11 @@ li.activeSubNavi:last-child{
     .navbar-collapse-left{
         display: none;
     }
-
+	.nav > li > a {
+		font-size: 11px;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
     .btn-side-left{
         display: block;
         font-size: 20px;
@@ -2795,6 +2827,9 @@ li.activeSubNavi:last-child{
     .nav-tabs>li{
         width: 100%;
     }
+	.nav > li > a {
+		font-size: 13px;
+	}
     .questHead h4{
         height: auto;
     }
