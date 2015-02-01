@@ -36,5 +36,14 @@ $( document ).ready(function() {
             $(".investors-hover").hide();
         }
     });
+		
+		$(".footer-slider").bxSlider({
+			hideControlOnEnd: true,
+			pager: false,
+			nextText: "Далее",
+			prevText: "Назад",
+			adaptiveHeight: true,
+			infiniteLoop: false
+		});
 });
 
