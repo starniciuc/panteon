@@ -1065,14 +1065,18 @@ body.modal-open,
     height: 38px;
     width: 173px;
     padding: 10px 54px 14px 30px;
+    opacity: 0.8;
 }
-
 .questionInner a:hover{
+    opacity: 1;
+    text-decoration: none;
+}
+/*.questionInner a:hover{
     background-image: url(../img/hoverQue.png);
     background-repeat: no-repeat;
     color: #49436d;
     text-decoration: none;
-}
+}*/
 
 .wrapQuest{
     padding-bottom: 15px;
@@ -2806,5 +2810,9 @@ li.activeSubNavi:last-child{
     
     .block3{
         width: 100%;
+    }
+    
+    .invest{
+        display: none;
     }
 }
