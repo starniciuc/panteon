@@ -2875,4 +2875,8 @@ li.activeSubNavi:last-child{
     .invest{
         display: none;
     }
+	
+	ul.traders li{
+		width: 31%;
+	}
 }
