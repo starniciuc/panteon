@@ -2040,7 +2040,7 @@ li.activeSubNavi:last-child{
     text-align: center;
 }
 
-.tablePamm tr td:last-child{
+/*.tablePamm tr td:last-child{
     font-weight: bold;
     color: #5b548d;
 }
@@ -2056,7 +2056,7 @@ li.activeSubNavi:last-child{
 
 .tablePamm tr td:nth-child(4){
     text-align: center;
-}
+}*/
 
 .whatsPane h4{
     color: #5b548d;
@@ -2491,6 +2491,7 @@ li.activeSubNavi:last-child{
 	clear: both;
 	display: table;
 }
+
 @media screen and (max-width: 1200px) { 
 	.nav > li > a{
 		padding-left: 10px;
